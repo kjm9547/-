@@ -1,0 +1,12 @@
+button{
+    width: 100px;
+    height: 55px;
+}
+#content_box{
+    width:500px;
+    border: 1px solid black;
+    height: 600px;
+}
+ul{
+    float: left;
+}
