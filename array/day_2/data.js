@@ -1,5 +1,5 @@
 const my_ar = [
-    { id: 5, name: '사자' },
+    { id: 5, name:"eqw" },
     { id: 4, name: '호랑이' },
     { id: 78, name: '기린' },
     { id: 105, name: '곰' },
