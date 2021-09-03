@@ -1,0 +1,34 @@
+
+#grid_zone{
+    display: grid;
+    grid-area:  1fr 1fr / 1fr;
+
+    grid-template-areas:
+    'header'
+    'section section section section';
+   
+    height: 800px;
+}
+
+#info_box{
+    grid-area: 'header';
+    width:100%;
+    height:auto;
+}
+#bt_box{
+    grid-area: 'section';
+    width: 100%;
+    height: 100px;
+}
+button{
+    width:25%;
+    height: 100px;
+    float:left;
+    background-color: lightslategrey;
+}
+#info_box{
+    text-align: center;
+    width: auto;
+    height: auto;
+    background-color: bisque;
+}
