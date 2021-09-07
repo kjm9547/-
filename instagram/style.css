@@ -1,0 +1,43 @@
+
+html,body{height: 100%;}
+/* background-image code */
+html{background-image:url(bg_main.jpg);
+    background-size:cover;
+     background-repeat:no-repeat;        
+}
+/* grid */
+#container{
+    display: grid;
+    grid-template: 0.2fr 0.7fr 0.1fr /1fr;
+    grid-template-areas: 'header'
+                         'content'
+                         'footer';
+    width: 20%;
+    height: 70%;
+    margin-left: 40%;
+    background-color: white;
+    margin-top: 10%;
+}
+
+input{
+    width: 80%;
+    height:40px;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 30px;
+}
+/* 메인 로고 영역 */
+header{
+    grid-area: 'header';
+    text-align: center;
+    font-style:initial
+    
+}
+content{
+    grid-area: 'content';
+    padding-left: 15%;
+    
+}
+footer{
+    grid-area: 'footer';
+}
