@@ -1,0 +1,23 @@
+*{border:1px solid black}
+html,body{
+    height: 100%;
+}
+#container{
+    display: grid;
+    grid-template:0.2fr 0.8fr/ 1fr 1fr;
+    grid-template-areas: 'header header'
+                        'content aside';
+    height: 100%;
+}
+
+header{
+    grid-area: 'header';
+}
+
+content{
+    grid-area: 'content';
+}
+
+aside{
+    grid-area: 'aside';
+}
