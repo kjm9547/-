@@ -2,22 +2,44 @@
 html,body{
     height: 100%;
 }
+body{background-color:ghostwhite;}
+
 #container{
     display: grid;
-    grid-template:0.2fr 0.8fr/ 1fr 1fr;
-    grid-template-areas: 'header header'
-                        'content aside';
+    grid-template:0.1fr 0.9fr/ 1fr 1fr;
+    grid-template-areas:
+                        'header header'
+                        'aside section';
+    
     height: 100%;
 }
 
 header{
-    grid-area: 'header';
+    grid-area: header;
+    text-align: center;    
+}
+#logo_text{
+    width:auto;
+    display: inline;
+}
+#search_box{
+    
+    text-align: center;
+    display: inline;
+
 }
 
-content{
-    grid-area: 'content';
+#home{display: right;}
+#home_bt{
+    width: 25px;
+    height: 25px;
+     
+}
+section{
+    grid-area: section;
+    
 }
 
 aside{
-    grid-area: 'aside';
+    grid-area: aside;
 }
