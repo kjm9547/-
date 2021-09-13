@@ -6,9 +6,10 @@ body{background-color:ghostwhite;}
 
 #container{
     display: grid;
-    grid-template:0.1fr 0.9fr/ 1fr 1fr;
+    grid-template:0.05fr 0.15fr 0.8fr/ 0.7fr 0.3fr;
     grid-template-areas:
                         'header header'
+                        'content section'
                         'aside section';
     
     height: 100%;
@@ -23,10 +24,10 @@ header{
     display: inline;
 }
 #search_box{
-    
+    width:300px;
     text-align: center;
     display: inline;
-
+    margin: 0 38%;
 }
 
 #home{display: right;}
@@ -35,6 +36,10 @@ header{
     height: 25px;
      
 }
+content{
+    grid-area: content;
+}
+
 section{
     grid-area: section;
     

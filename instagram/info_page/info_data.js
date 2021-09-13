@@ -1,2 +1,2 @@
-var path = window.location.pathname;
-console.log(path)
+document.querySelector('#home_bt').addEventListener('click', ()=>
+{location.href =`/instagram/info_page/info_page.html`})
