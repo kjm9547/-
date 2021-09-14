@@ -1,50 +1,93 @@
 *{border:1px solid black}
 html,body{
     height: 100%;
+    margin: 0;
+    padding: 0;
+
 }
-body{background-color:ghostwhite;}
+body{background-color:gainsboro;}
 
 #container{
     display: grid;
-    grid-template:0.05fr 0.15fr 0.8fr/ 0.7fr 0.3fr;
+    grid-template:0.1fr 0.15fr 0.9fr / 0.7fr 0.3fr;
     grid-template-areas:
                         'header header'
                         'content section'
                         'aside section';
-    
-    height: 100%;
+    width: auto;
+    height: auto;
 }
-
+/* 로고 영역*/
 header{
+    background-color: white;
     grid-area: header;
-    text-align: center;    
+    text-align: left;
+    box-sizing: border-box;
+    height: 60px;    
 }
 #logo_text{
-    width:auto;
     display: inline;
+    margin-right: 35%;
 }
 #search_box{
     width:300px;
     text-align: center;
-    display: inline;
-    margin: 0 38%;
+    margin-right: 35%;
 }
 
-#home{display: right;}
-#home_bt{
+header > a > img{
     width: 25px;
     height: 25px;
      
 }
+/* 스토리 */
 content{
     grid-area: content;
+    box-sizing: border-box;
+    padding: 20px 0 20px 37%;
+    height: 100%;
+    width:100%;
 }
+/* 스토리 박스 및 스토리 버튼 */
+#story_box{
+    background-color: white;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+#my_story{
+    width:80px;
+    height: 80px;
+    border-radius:50% ;
+
+}
+
+
+aside{
+    grid-area: aside;
+    height: auto;
+    box-sizing: border-box;
+    padding-left: 37%;
+}
+
+#user_info{
+    height:70px;
+    background-color: white;
+}
+
+#user_picture{
+    height:auto;
+} 
+
+#user_picture > img{
+    width: 100%;
+    height: 700px; 
+}
+
 
 section{
     grid-area: section;
     
-}
-
-aside{
-    grid-area: aside;
 }
